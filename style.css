@@ -1,0 +1,402 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+.container{
+    width: 100%;
+    /* height: 500px; */
+    background-color: #000;
+    margin: 30px 20px;
+}
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+ .profile{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.profile img{
+    max-width: 50%;
+    border-radius: 50%;
+    height: 100px;
+   margin: 20px 0;
+}
+
+.profileinfo {
+    display: grid;
+    /* justify-content: center;
+    align-items: center; */
+    grid-template-columns: 1fr 1fr;
+}
+
+.profileinfo .username{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.profileinfo .messege{
+    color: #fff;
+    width: 130px;
+    /* margin-left: 10px; */
+    padding: 6px;
+    border-radius: 8px;
+    border: none;
+    background-color:#65676B;
+    cursor: pointer;
+}
+
+.profileinfo .messege:hover{
+    background-color: #606060;
+}
+
+
+.info{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    /* position: absolute; */
+    top: 12vh;
+    margin-top: 10px; 
+}
+
+.postinfo {
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.followers {
+    font-size: 16px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.following {
+    font-size: 16px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+
+.Bio{
+    display: grid;
+    grid-row: 3;
+    align-items: start;
+    justify-content: start;
+}
+
+.Bio .name{
+    font-size: 16px;
+}
+.Bio .Progrmmer{
+    font-size: 16px;
+}
+.Bio .description{
+    font-size: 16px;
+}
+
+.horizontel{
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+}
+
+.post-field{
+    width: 50%;
+    border: 2px solid #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 2px;
+    grid-column-gap: 0px;
+    margin: 60px 400px;
+    padding: 25px;
+}
+
+.bigpost{
+    width: 550px;
+    /* background-color: #fff; */
+    display: flex;
+    justify-content: start;
+    margin-top: 100px;
+    border: none;
+    
+}
+
+.details{
+    width: 50%;
+    height: 550px;
+    position: relative;
+    color: #fff;
+    background-color: #000;
+}
+
+.horizontel2{
+    width: 275px;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+}
+
+.profile2{
+    width: 200px;
+    /* height: 200px; */
+    display: grid;
+    grid-template-columns: 50px 200px 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.profile2 img{
+    max-width: 50%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.profile2 .username2{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.menu{
+    cursor: pointer;
+}
+
+.dots {
+    width: 4px;
+    height: 4px;
+    background-color: #fff;
+    margin: 2px 0;
+    border-radius: 50%;
+  }
+
+.menubar{
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+}
+
+.menubar .listItem{
+    text-align: center;
+    font-size: 18px;
+    border-bottom: 1px solid #fff;
+    padding-top: 13px;
+    cursor: pointer;
+}
+.menubar .listItem:hover{
+    background-color: #65676B;
+}
+.menubar .listItem .report{
+    color: red;
+}
+
+.style{
+    width: 300px;
+    height: 260px;
+    margin-top: 100px;
+    margin-left: -140px;
+    border-radius: 10px;
+    background-color: #363333;
+  }
+
+  .horizontel3{
+    width: 275px;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 110px;
+}
+
+.caption{
+    width: 100%;
+    /* background-color: #000; */
+    position: relative;
+    margin-top: 15px;
+    overflow-y: scroll;
+    /* overflow-y: hidden; */
+}
+
+
+.caption h4{
+    font-size: 16px;
+    font-weight: 300;
+    margin: 10px 14px;
+    height: 350px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    /* box-shadow: inset 0 0 2px grey;  */
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #65676B; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(); 
+  }
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+  .btns{
+    width: 100%;
+    margin-top: 15px;
+    color: #fff;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 40px 40px 40px 40px;
+  }
+
+.like{
+    font-size: 24px;
+    cursor: pointer;
+    /* color: #000; */
+  }
+
+.like:hover{
+    color: #65676B;
+}
+
+  #likeBtn.active{
+    color: #f00;
+  }
+
+  .btns .comment{
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+.comment:hover{
+    color: #65676B;
+}
+
+  .btns .send{
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+.send:hover{
+    color: #65676B;
+}
+
+  .btns .save{
+    font-size: 24px;
+    margin-left: 120px;
+    cursor: pointer;
+  }
+
+.save:hover{
+    color: #65676B;
+}
+
+.save.active{
+    color: #45679a;
+}
+
+.share{
+    display: grid;
+    grid-template-columns: 60px 60px 60px 60px 60px 60px 60px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 1;
+    background-color: #363333;
+    top: 40vh;
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.share-btn{
+    font-size: 30px;
+    margin-left: 10px;
+    color: #000;
+    padding: 10px;
+    cursor: pointer;
+    /* transition: 1s ease; */
+}
+
+.share span{
+    font-size: 10px;
+}
+
+.share-btn:hover{
+    color: #45679a;
+}
+
+.share::-webkit-scrollbar{
+    display: none;
+}
+
+  .horizontel4{
+    width: 275px;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 60px;
+}
+
+.comment-box{
+    margin-left: 10px;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 30px 190px 30px;
+    grid-gap: 5px;
+}
+
+.emoji{
+    font-size: 23px;
+    margin-top: 7px;
+}
+
+.comment{
+    border: none;
+    background-color: #000;
+    color: #fff;
+    outline: none;
+}
+
+.cmnt-tbn{
+    border: none;
+    color: #fff;
+    background-color: #000;
+}
+.cmnt-tbn:hover{
+    border: none;
+    color: lightpink;
+    background-color: #000;
+    cursor: pointer;
+}
